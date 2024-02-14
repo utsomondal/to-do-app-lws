@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <!-- container -->
+        <div>
+            <!-- logo -->
+            <div class="flex flex-col items-center mb-10">
+                <img src="logo.jpg" class="w-1/5 mb-4">
+                <p class="text-2xl font-semibold capitalize">write your everyday tasks - to do app</p>
+            </div>
+            <!-- task container -->
+            <div class="bg-slate-400 p-5 flex gap-4 justify-center">
+                <input type="text" placeholder="Add your new task" class="p-4 w-2/3 rounded-xl focus:outline-none"
+                    id="do-task">
+                <button id="add-task" class="bg-gray-500 px-6 py-3 rounded-xl text-white font-semibold">Add
+                    Task</button>
+            </div>
+            <!-- complete vs incomplete -->
+            <div class="flex justify-around mt-5">
+                <!-- incomplete -->
+                <div id="incomplete-task" class="flex flex-col p-5 bg-slate-400 rounded-xl w-1/5">
+                    <h1 class="text-xl uppercase text-center pb-1 font-bold">incomplete tasks</h1>
+                    <hr>
+                </div>
+                <!-- complete -->
+                <div id="complete-task" class="flex flex-col p-5 bg-slate-400 rounded-xl w-1/5">
+                    <h1 class="text-xl uppercase text-center pb-1 font-bold">complete tasks</h1>
+                    <hr>
+                </div>
+            </div>
+    </main>
+    <!-- js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
